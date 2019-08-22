@@ -5,6 +5,7 @@
 * Torchvision 0.3.0
 * Intel Real Sense D435i
 * UR5 robotic arm
+* Robotiq 2F-85 2-finger gripper
 
 ### Setting up:
 * Print a charuco board
