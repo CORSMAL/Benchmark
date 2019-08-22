@@ -1,0 +1,15 @@
+#Ignore all models
+*.pth
+
+#Ignore all images/videos
+*.png
+*.jpg
+*.mp4
+
+#Ignore all temporal python files
+*.pyc
+
+#Ignore tar and zip files
+*.zip
+*.tar
+*.tar.gz

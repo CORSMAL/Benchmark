@@ -1,0 +1,12 @@
+# This commands should be run when a new terminal is open for running the baseline
+
+
+cd libs/siamMask
+export SiamMask=$PWD
+export PYTHONPATH=$PWD:$PYTHONPATH
+cd $SiamMask/experiments/siammask
+export PYTHONPATH=$PWD:$PYTHONPATH
+cd ../../../../
+
+
+
