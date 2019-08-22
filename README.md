@@ -1,1 +1,1 @@
-This repository contains the baseline for setup 1 (S1) and setup 2 (S2) described in the manuscript titled "Benchmark for Human-to-Robot Handovers of Unseen Containers with Unknown Filling" submited to RA-L.
+This repository contains the baseline for setup 1 (S1) and setup 2 (S2) described in the manuscript titled *Benchmark for Human-to-Robot Handovers of Unseen Containers with Unknown Filling* submited to RA-L.
