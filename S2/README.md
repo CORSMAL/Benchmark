@@ -71,8 +71,11 @@ python baseline_robot.py
 The file _calibration.csv_ contains the calibration data and the camera poses for each sensor (RGB, Depth, and Stereo infrared) for both IntelReal Sense devices.
 
 Format:
+
 *Columns
+
  fx,fy,cx,cy,R11,R12,R13,R21,R22,R23,R31,R32,R33,T1,T2,T3.
+ 
 *Rows indicate the sensor
   1. camera 1 rgb
   2. camera 1 infrared 1
