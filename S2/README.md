@@ -12,7 +12,8 @@
 * Modify the properties of the charuco board in : ./libs/_3d/projection.py [variable CHARUCO_BOARD]
 * Download cup detection model and place in ./data/models/
 ~~~~
-wget https://drive.google.com/open?id=1ImLTap_lYduAFz2Jzdebwdz71kpXT2ol
+wget http://corsmal.eecs.qmul.ac.uk/resources/models/coco_maskrcnn_resnet50_fpn_2cat.zip
+unzip coco_maskrcnn_resnet50_fpn_2cat.zip
 mv coco_maskrcnn_resnet50_fpn_2cat <projectDirectory>/data/models
 ~~~~ 
 
