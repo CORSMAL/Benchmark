@@ -254,7 +254,7 @@ where:
 
 For each pose $i$ and repetition $k$, verify that the reported `motion_time_ms` matches the timestamps:
 
-$$\text{motion\_time\_ms} = \text{round}(\text{end\_time} - \text{start\_time} \text{ in milliseconds})$$
+$$motionTime_{ms} = \text{round}(endTime - startTime) \text{ in milliseconds}$$
 
 **Tolerance:** ±1 ms (to account for rounding)
 
@@ -344,7 +344,7 @@ If no precise system clock is available, synchronise with video timestamp overla
 Organisers will validate:
 
 1. **Format:** All timestamps are valid ISO 8601 UTC  
-2. **Ordering:** $\text{end\_time} > \text{start\_time}$ (always)  
+2. **Ordering:** $$\text{endTime} > \text{startTime}$$ (always)  
 3. **Duration match:** `motion_time_ms ≈ (end_time - start_time)` (within ±1 ms)  
 4. **Sequence integrity:** Reasonable gaps between poses (100 ms to 2 seconds)  
 5. **Video synchronisation:** Timestamps align with video clock overlay
