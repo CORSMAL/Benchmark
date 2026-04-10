@@ -37,14 +37,15 @@ Let:
 - $h$ = maximum vertical reachability (mm)
  
 ### **2.1 Standard Initial Pose**
- 
+
 Before each sequence, the robot **must start** from a standardised initial pose:
 
-**Initial pose in base frame (orientation: identity):**
+**Initial pose (orientation: identity):**
 
 $$p_{\text{init}} = (0, 0, 0), \quad q_{\text{init}} = (0, 0, 0, 1)$$
 
 Participants must ensure their robot end‑effector can reach this pose reliably. This pose will be verified in video evidence.
+A custom reference frame can be chosen, for example the end effector "home pose".
  
 ### **2.2 The Six Target Poses**
  
@@ -139,8 +140,8 @@ Each submission must include **one or more video files** showing:
 For each of the **K = 3 repetitions** and each of the **6 target poses**, report:
  
 - **Target ID** (1–6)  
-- **Position**: $x, y, z$ in **millimeters** (base frame)  
-- **Orientation**: quaternion $q_x, q_y, q_z, q_w$ (base frame)  
+- **Position**: $x, y, z$ in **millimeters** (with respect to the "home pose" in the custom reference system)  
+- **Orientation**: quaternion $q_x, q_y, q_z, q_w$ (with respect to the "home pose" in the custom reference system)  
 - **Repetition number** (1, 2, or 3)  
 - **Start time**: ISO 8601 timestamp (UTC, millisecond precision)
 - **End time**: ISO 8601 timestamp (UTC, millisecond precision)
@@ -185,8 +186,8 @@ run_id,repetition,target_id,x,y,z,qx,qy,qz,qw,start_time,end_time,motion_time_ms
 | `run_id` | int | Run identifier (not used in scoring, for traceability) |
 | `repetition` | int | Repetition number (1, 2, or 3) |
 | `target_id` | int | Target pose ID (1–6) |
-| `x, y, z` | float | Position in base frame (**millimeters**) |
-| `qx, qy, qz, qw` | float | Quaternion (base frame) |
+| `x, y, z` | float | Position with respect to the "home pose" in the custom reference system (**millimeters**) |
+| `qx, qy, qz, qw` | float | Quaternion (with respect to the "home pose" in the custom reference system) |
 | `start_time` | string | Motion start time (ISO 8601 UTC, millisecond precision) |
 | `end_time` | string | Motion end time (ISO 8601 UTC, millisecond precision) |
 | `motion_time_ms` | float | Duration of motion in **milliseconds** (computed as `end_time - start_time`) |
